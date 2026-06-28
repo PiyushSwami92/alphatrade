@@ -1,0 +1,27 @@
+app:
+  name: AlphaTrade
+  version: 1.0.0
+
+mode:
+  trading: paper
+
+broker:
+  platform: mt5
+
+market:
+  symbol: EURUSD
+  timeframe: M15
+
+risk:
+  risk_per_trade: 1
+  max_daily_loss: 5
+  max_drawdown: 10
+
+strategy:
+  name: MultiConfirmation
+
+logging:
+  level: INFO
+
+dashboard:
+  enabled: true
