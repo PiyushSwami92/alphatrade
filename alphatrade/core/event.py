@@ -87,4 +87,10 @@ class FillEvent(Event):
     commission: float
     order_id: str
 
-    event_type = EventType.FILL
+    stop_loss: float
+    take_profit: float
+
+    event_type: EventType = field(
+        default=EventType.FILL,
+        init=False,
+    )
